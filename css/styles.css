@@ -28,14 +28,24 @@ Background-color: #333570
 }
 
 body {
-  padding-top: 5%;
-  padding-left: 10%;
-  padding-right: 10%;
+  padding: 2% 10%;
   font-family: 'Jura', Sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 1;
   background-color: white;
+  animation-name: opacity-fx;
+  animation-duration: 1s;
+}
+
+@keyframes opacity-fx {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
 }
 
 span {
@@ -53,14 +63,13 @@ span:hover {
   width: 100%;
   max-width: 100%;
   border-bottom: 1px solid white;
-  font-weight: bolder;
   background-color: var(--background-color);
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
 img.page-header__item {
   position: relative;
-  animation-name: logo-movement;
+  /* animation-name: logo-movement; */
   animation-duration: 1s;
 }
 
@@ -82,7 +91,7 @@ img.page-header__item {
 .profile_picture {
   float: left;
   margin-right: 20px;
-  margin-left: 20px;
+  margin-left: 30px;
   border-radius: 50%;
   width: 250px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
@@ -100,8 +109,9 @@ img.page-header__item {
 }
 
 ul {
+  padding-left: 0;
+  text-align: right;
   list-style-type: none;
-  padding-left: 10px;
 }
 
 h1 {
@@ -162,6 +172,28 @@ a:active {
 
 .contact {
   text-align: center;
+}
+
+@media only screen and (max-width: 750px) {
+  body {
+    padding: 0;
+  }
+
+  ul {
+    text-align: center;
+  }
+
+  .page-header {
+    display: flow-root;
+  }
+
+  .profile_picture {
+    float: none;
+  }
+
+  .svg-berlin {
+    display: none;
+  }
 }
 
 /* Experience table */
@@ -229,6 +261,20 @@ button:focus,
 
 .sun {
   animation: 4s color-change infinite alternate linear;
+}
+
+@keyframes color-change2 {
+  from {
+    fill: white;
+  }
+
+  to {
+    fill: grey;
+  }
+}
+
+.berlin-ball {
+  animation: 1s color-change2 infinite alternate linear;
 }
 
 @keyframes cloud-move {
