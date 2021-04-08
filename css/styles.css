@@ -7,15 +7,15 @@ Text-color-alternative1:
 Text-color-links: #0acdff
 Text-color-active-link: #489c79
 Background-color: #333570
-
 */
+
 :root {
-    --main-color: pink;
-    --primary-color: pink;
-    --text-color: white;
-    --alternative-color: #0acdff;
-    --active-color: #489c79;
-    --background-color: #3f4190;
+  --main-color: pink;
+  --primary-color: pink;
+  --text-color: white;
+  --alternative-color: #0acdff;
+  --active-color: #489c79;
+  --background-color: #3f4190;
 }
 
 * {
@@ -43,7 +43,7 @@ span {
 }
 
 span:hover {
-    background: red;
+  background: red;
 }
 
 .page-header {
@@ -55,24 +55,28 @@ span:hover {
   border-bottom: 1px solid white;
   font-weight: bolder;
   background-color: var(--background-color);
-  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
 img.page-header__item {
-position: relative;
-animation-name: logo-movement;
-animation-duration: 1s;
+  position: relative;
+  animation-name: logo-movement;
+  animation-duration: 1s;
 }
 
 @keyframes logo-movement {
-  from {left: -1000px;}
-  to {left: 0px;}
-}
+  from {
+    left: -1000px;
+  }
 
+  to {
+    left: 0;
+  }
+}
 
 .page-header__item:last-child {
   flex-grow: 1;
-  text-align: right
+  text-align: right;
 }
 
 .profile_picture {
@@ -94,7 +98,6 @@ animation-duration: 1s;
   margin: 0 auto;
   flex: 1 1 100px;
 }
-
 
 ul {
   list-style-type: none;
@@ -128,7 +131,8 @@ a:visited {
   color: var(--alternative-color);
 }
 
-a:hover, a:focus {
+a:hover,
+a:focus {
   text-decoration: none;
 }
 
@@ -136,7 +140,7 @@ a:active {
   color: var(--active-color);
 }
 
-/*Check out some of my code animation*/
+/* Check out some of my code animation */
 
 .code {
   padding: 10px;
@@ -147,22 +151,24 @@ a:active {
   transform: scaleY(2) scaleX(2);
 }
 
-/*Pages headliners*/
+/* Pages headliners */
 .about {
   text-align: center;
 }
+
 .work {
   text-align: center;
 }
-.contact{
+
+.contact {
   text-align: center;
 }
 
-/*Experience table*/
+/* Experience table */
 table {
   color: var(--text-color);
   width: 100%;
-  text-align:center;
+  text-align: center;
 }
 
 form {
@@ -174,16 +180,17 @@ form {
   padding: 10px;
 }
 
-/*Download my CV*/
+/* Download my CV */
 .button_cv {
-text-align: center;
+  text-align: center;
 }
 
 a.button {
   color: white;
 }
 
-button, .button {
+button,
+.button {
   border: none;
   display: inline-block;
   font-family: inherit;
@@ -200,9 +207,9 @@ button:hover,
 button:focus,
 .button:hover,
 .button:focus {
-cursor: pointer;
-font-size: 25px;
-background-color: #e0b354;
+  cursor: pointer;
+  font-size: 25px;
+  background-color: #e0b354;
 }
 
 /* SVG Animation */
@@ -214,6 +221,7 @@ background-color: #e0b354;
   from {
     fill: lightblue;
   }
+
   to {
     fill: yellow;
   }
@@ -227,6 +235,7 @@ background-color: #e0b354;
   from {
     transform: translate(0, 50px);
   }
+
   to {
     transform: translate(200px, 50px);
   }
@@ -240,6 +249,7 @@ background-color: #e0b354;
   from {
     transform: translate(446px, 48px);
   }
+
   to {
     transform: translate(100px, 48px);
   }
@@ -249,23 +259,22 @@ background-color: #e0b354;
   animation: 60s cloud-move-reverse infinite alternate linear;
 }
 
-/*Navigation bar*/
+/* Navigation bar */
 a.navigation-list__item {
-font-size: 18px;
+  font-size: 18px;
 }
 
 a.navigation-list__item--active {
-font-size: 18px;
-text-shadow: 1px 1px pink;
+  font-size: 18px;
+  text-shadow: 1px 1px pink;
 }
 
 .navigation-list__item--active {
   text-decoration: none;
 }
 
-nav.page-header__item a:before,
-nav.page-header__item a:after
-{
+nav.page-header__item a::before,
+nav.page-header__item a::after {
   display: flex;
   position: absolute;
   width: 10px;
@@ -276,23 +285,20 @@ nav.page-header__item a:after
   transition: all 0.4s;
 }
 
-nav.page-header__item a:before
-{
-    top: auto;
-    transform: translateX(500px);
+nav.page-header__item a::before {
+  top: auto;
+  transform: translateX(500px);
 }
 
-nav.page-header__item a:after
-{
-    bottom: auto;
-    transform: translateX(30px);
+nav.page-header__item a::after {
+  bottom: auto;
+  transform: translateX(30px);
 }
 
-nav.page-header__item a:hover:before,
-nav.page-header__item a:hover:after
-{
-    opacity: 1;
-    transform: translateX(0px);
+nav.page-header__item a:hover::before,
+nav.page-header__item a:hover::after {
+  opacity: 1;
+  transform: translateX(0);
 }
 
 img.page-header__item {
@@ -305,8 +311,7 @@ img.page-header__item {
   margin-left: 15px;
 }
 
-
-/*Contact Form */
+/* Contact Form */
 .standard-label {
   display: block;
   color: var(--text-color);
@@ -337,36 +342,37 @@ img.page-header__item {
 
 #contact-message {
   margin: 10px;
-  width:100%;
+  width: 100%;
   border-radius: 10px;
 }
 
 #contact-form {
-    border-radius: 20px;
-    margin-left: 50px;
-    margin-right: 50px;
-    margin-bottom: 20px;
-    padding: 20px;
-    background-color: #015088;}
+  border-radius: 20px;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-bottom: 20px;
+  padding: 20px;
+  background-color: #015088;
+}
 
 #contact-button {
-   background-color: #00C5BE;
-   border: none;
-   color: #fff;
-   font-size: 1em;
-   padding: 10px 50px;
-   text-transform: uppercase;
-   font-weight: normal;
-   transition: 0.9s opacity, 0.4s font-size, 0.5s background-color;}
+  background-color: #00c5be;
+  border: none;
+  color: #fff;
+  font-size: 1em;
+  padding: 10px 50px;
+  text-transform: uppercase;
+  font-weight: normal;
+  transition: 0.9s opacity, 0.4s font-size, 0.5s background-color;
+}
 
 #contact-button:hover {
   cursor: pointer;
   font-size: 25px;
   background-color: #e0b354;
-
 }
 
-/*Work tables */
+/* Work tables */
 .grid {
   margin: 20px;
   text-align: right;
@@ -390,26 +396,28 @@ img.page-header__item {
   }
 }
 
-@media all (min-width:500px) and (max-width:750px){
+@media all (min-width: 500px) and (max-width: 750px) {
   .grid {
     grid-template-columns: 1fr 1fr;
   }
 }
 
-@media all (max-width:750px) {
+@media all (max-width: 750px) {
   .grid {
-    grid-gap:10px;
+    grid-gap: 10px;
   }
+
   .grid__item:last-child {
     grid-column: auto;
     grid-row: auto;
   }
+
   h1 {
     font-size: 15px;
   }
 }
 
-/*Find me on*/
+/* Find me on */
 footer {
   clear: both;
   display: flex;
