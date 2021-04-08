@@ -15,21 +15,35 @@ Background-color: #333570
     --text-color: white;
     --alternative-color: #0acdff;
     --active-color: #489c79;
-    --background-color: #333570;
+    --background-color: #3f4190;
 }
 
 * {
   box-sizing: border-box;
 }
 
+.background {
+  background-color: #333570;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+}
+
 body {
-  padding: 5%;
+  padding-top: 5%;
+  padding-left: 10%;
+  padding-right: 10%;
   font-family: 'Jura', Sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 1;
-  background-color: var(--background-color);
-  text-align: center;
+  background-color: white;
+}
+
+span {
+  font-weight: bolder;
+}
+
+span:hover {
+    background: red;
 }
 
 .page-header {
@@ -38,15 +52,23 @@ body {
   padding: 20px;
   width: 100%;
   max-width: 100%;
-  border-bottom: 2px solid white;
+  border-bottom: 1px solid white;
   font-weight: bolder;
   background-color: var(--background-color);
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black
 }
 
-.page-header__item {
-  flex: 0 1 200px;
+img.page-header__item {
+position: relative;
+animation-name: logo-movement;
+animation-duration: 1s;
 }
+
+@keyframes logo-movement {
+  from {left: -1000px;}
+  to {left: 0px;}
+}
+
 
 .page-header__item:last-child {
   flex-grow: 1;
@@ -56,8 +78,10 @@ body {
 .profile_picture {
   float: left;
   margin-right: 20px;
-  width: 350px;
+  margin-left: 20px;
   border-radius: 50%;
+  width: 250px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
   transition: transform 3s;
 }
 
@@ -71,12 +95,14 @@ body {
   flex: 1 1 100px;
 }
 
+
 ul {
   list-style-type: none;
   padding-left: 10px;
 }
 
 h1 {
+  padding-left: 20px;
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
   color: var(--main-color);
 }
@@ -87,13 +113,15 @@ h2 {
 }
 
 p {
+  padding-left: 20px;
   line-height: 1.4;
   color: var(--text-color);
 }
 
 a {
+  text-decoration: none;
   line-height: 2.5;
-  color: var(--alternative-color);
+  color: var(--text-color);
 }
 
 a:visited {
@@ -108,15 +136,26 @@ a:active {
   color: var(--active-color);
 }
 
-/*Check out some of my code transition*/
+/*Check out some of my code animation*/
+
 .code {
-  padding-left: 40px;
-  display: flex;
+  padding: 10px;
   transition: transform 10s;
 }
 
 .code:hover {
   transform: scaleY(2) scaleX(2);
+}
+
+/*Pages headliners*/
+.about {
+  text-align: center;
+}
+.work {
+  text-align: center;
+}
+.contact{
+  text-align: center;
 }
 
 /*Experience table*/
@@ -128,11 +167,20 @@ table {
 
 form {
   padding: 10px;
+  text-align: center;
+}
+
+.story {
+  padding: 10px;
 }
 
 /*Download my CV*/
 .button_cv {
 text-align: center;
+}
+
+a.button {
+  color: white;
 }
 
 button, .button {
@@ -145,7 +193,7 @@ button, .button {
   padding: 10px;
   border-radius: 3px;
   border-bottom: 2px solid rgba(0, 0, 0, 0.3);
-  transition: 0.9s opacity, 0.4s font-size, 0.5s background-color;
+  transition: 0.4s font-size, 0.5s background-color;
 }
 
 button:hover,
@@ -153,18 +201,21 @@ button:focus,
 .button:hover,
 .button:focus {
 cursor: pointer;
-opacity: 0.8;
 font-size: 25px;
 background-color: #e0b354;
 }
 
 /* SVG Animation */
+.svg-berlin {
+  text-align: center;
+}
+
 @keyframes color-change {
   from {
-    fill: blue;
+    fill: lightblue;
   }
   to {
-    fill: #f76414;
+    fill: yellow;
   }
 }
 
@@ -199,6 +250,15 @@ background-color: #e0b354;
 }
 
 /*Navigation bar*/
+a.navigation-list__item {
+font-size: 18px;
+}
+
+a.navigation-list__item--active {
+font-size: 18px;
+text-shadow: 1px 1px pink;
+}
+
 .navigation-list__item--active {
   text-decoration: none;
 }
@@ -237,7 +297,7 @@ nav.page-header__item a:hover:after
 
 img.page-header__item {
   display: flex;
-  min-width: 50%;
+  min-width: 20%;
 }
 
 .page-header__item li {
@@ -248,6 +308,7 @@ img.page-header__item {
 
 /*Contact Form */
 .standard-label {
+  display: block;
   color: var(--text-color);
 }
 
@@ -256,38 +317,58 @@ img.page-header__item {
   text-align: center;
 }
 
+#contact-name {
+  margin: 10px;
+  width: 100%;
+  border-radius: 10px;
+}
+
 #contact-email {
   margin: 10px;
-  width: 50%
-
+  width: 100%;
+  border-radius: 10px;
 }
 
 #contact-phone {
   margin: 10px;
-  width: 50%;
+  width: 100%;
+  border-radius: 10px;
 }
 
 #contact-message {
   margin: 10px;
-  width: 50%;
+  width:100%;
+  border-radius: 10px;
 }
 
 #contact-form {
+    border-radius: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 20px;
     padding: 20px;
     background-color: #015088;}
 
 #contact-button {
-  background-color: #00C5BE;
+   background-color: #00C5BE;
    border: none;
    color: #fff;
    font-size: 1em;
    padding: 10px 50px;
    text-transform: uppercase;
    font-weight: normal;
+   transition: 0.9s opacity, 0.4s font-size, 0.5s background-color;}
+
+#contact-button:hover {
+  cursor: pointer;
+  font-size: 25px;
+  background-color: #e0b354;
+
 }
 
 /*Work tables */
 .grid {
+  margin: 20px;
   text-align: right;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -300,7 +381,6 @@ img.page-header__item {
 }
 
 .grid__item:last-child {
-  grid-column: 1 / 3;
   grid-row: 1 / 3;
 }
 
