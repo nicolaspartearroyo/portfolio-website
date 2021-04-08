@@ -140,7 +140,7 @@ a:active {
 
 .code {
   padding: 10px;
-  transition: transform 10s;
+  transition: transform 2s;
 }
 
 .code:hover {
