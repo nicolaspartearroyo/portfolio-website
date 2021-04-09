@@ -584,3 +584,9 @@ footer {
 .social-media-logo {
   text-decoration: none;
 }
+
+img.github,
+img.soundcloud,
+img.linkedin {
+  width: 30px;
+}
