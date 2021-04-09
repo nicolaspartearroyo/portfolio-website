@@ -568,14 +568,6 @@ button:focus,
   }
 }
 
-/* Internet Explorer 11 Config */
-@media screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none) {
-  a {
-    line-height: none;
-  }
-
-}
-
 /* Find me on */
 footer {
   clear: both;
