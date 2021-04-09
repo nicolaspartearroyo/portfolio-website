@@ -84,7 +84,6 @@ p {
 
 a {
   text-decoration: none;
-  line-height: 2.5;
   color: white;
 }
 
@@ -567,6 +566,14 @@ button:focus,
   .svg-berlin {
     display: none;
   }
+}
+
+/* Internet Explorer 11 Config */
+@media screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none) {
+  a {
+    line-height: none;
+  }
+
 }
 
 /* Find me on */
