@@ -3,18 +3,17 @@ Colors used
 
 Text-color-main: pink
 Text-color-texts: white
-Text-color-alternative1:
 Text-color-links: #0acdff
 Text-color-active-link: #489c79
 Background-color: #333570
 */
 
 :root {
-  --main-color: pink;
   --primary-color: pink;
   --text-color: white;
   --alternative-color: #0acdff;
   --active-color: #489c79;
+  --header-color: #333570;
   --background-color: #3f4190;
 }
 
@@ -23,7 +22,7 @@ Background-color: #333570
 }
 
 .background {
-  background-color: #333570;
+  background-color: var(--background-color);
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
 }
 
@@ -53,7 +52,7 @@ span {
 }
 
 span:hover {
-  background: darkred;
+  background: var(--primary-color);
 }
 
 .page-header {
@@ -63,7 +62,7 @@ span:hover {
   width: 100%;
   max-width: 100%;
   border-bottom: 1px solid white;
-  background-color: var(--background-color);
+  background-color: var(--header-color);
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
@@ -101,7 +100,7 @@ ul {
 h1 {
   padding-left: 20px;
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-  color: var(--main-color);
+  color: var(--primary-color);
 }
 
 h2 {
@@ -326,7 +325,7 @@ img.page-header__item {
 }
 
 .contact-details {
-  color: var(--main-color);
+  color: var(--primary-color);
   text-align: center;
 }
 
