@@ -165,8 +165,8 @@ nav.page-header__item a::after {
 
 nav.page-header__item a::before {
   top: auto;
-  -webkit-transform: translateX(500px);
-  transform: translateX(500px);
+  -webkit-transform: translateX(100px);
+  transform: translateX(100px);
 }
 
 nav.page-header__item a::after {

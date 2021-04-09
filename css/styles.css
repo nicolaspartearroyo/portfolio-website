@@ -133,7 +133,7 @@ nav.page-header__item a::after {
 
 nav.page-header__item a::before {
   top: auto;
-  transform: translateX(500px);
+  transform: translateX(100px);
 }
 
 nav.page-header__item a::after {
