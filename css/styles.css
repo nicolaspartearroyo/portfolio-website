@@ -94,7 +94,6 @@ a:active {
   display: flex;
   margin: auto;
   padding: 20px;
-  width: 100%;
   max-width: 100%;
   border-bottom: 1px solid white;
   background-color: var(--header-color);
@@ -133,7 +132,7 @@ nav.page-header__item a::after {
 
 nav.page-header__item a::before {
   top: auto;
-  transform: translateX(500px);
+  transform: translateX(100px);
 }
 
 nav.page-header__item a::after {
