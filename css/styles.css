@@ -378,6 +378,11 @@ button:focus,
   background-color: #e0b354;
 }
 
+.error-message {
+  color: red;
+  font-weight: bold;
+}
+
 /* Work tables */
 .grid {
   margin: 20px;
