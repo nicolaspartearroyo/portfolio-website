@@ -34,7 +34,7 @@ body {
 }
 
 .NP-logo {
-  width: 80%;
+  width: 60%;
   padding: 20px;
   display: block;
   margin-top: 100px;
@@ -48,9 +48,18 @@ body {
 
 .logo {
   margin-top: 10px;
-  width: 10%;
-  height: 10%;
+  width: 8%;
+  height: 8%;
 }
+
+.work-link-yellow {
+  color: yellow;
+}
+
+.work-link-orange {
+  color: orange;
+}
+
 
 @-webkit-keyframes opacity-fx {
   from {
