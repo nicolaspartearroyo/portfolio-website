@@ -45,7 +45,7 @@ Background-color: #333570
     100%{background-position:0% 18%}
 }
 
-.css-selector-2 {
+/* .css-selector-2 {
     background: linear-gradient(180deg, #000000, #5d5d5d, #00072f, #000000);
     background-size: 800% 800%;
 
@@ -68,9 +68,10 @@ Background-color: #333570
     0%{background-position:50% 0%}
     50%{background-position:51% 100%}
     100%{background-position:50% 0%}
-}
+} */
 
 body {
+
   padding: 2% 10%;
   font-family: 'Jura', Sans-serif;
   font-weight: 400;
@@ -84,7 +85,7 @@ body {
 }
 
 .NP-logo {
-  width: 60%;
+  max-width: 40%;
   padding: 20px;
   display: block;
   margin-top: 100px;
