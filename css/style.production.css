@@ -20,9 +20,10 @@ Background-color: #333570
   box-sizing: border-box;
 }
 
+/* Background Animation*/
 .css-selector {
-    background: linear-gradient(309deg, #000000, #00439f, #b90000);
-    background-size: 600% 600%;
+  background: linear-gradient(309deg, #b90000, #00439f, #000000);
+  background-size: 600% 600%;
 
     -webkit-animation: AnimationName 30s ease infinite;
     -moz-animation: AnimationName 30s ease infinite;
@@ -45,33 +46,7 @@ Background-color: #333570
     100%{background-position:0% 18%}
 }
 
-/* .css-selector-2 {
-    background: linear-gradient(180deg, #000000, #5d5d5d, #00072f, #000000);
-    background-size: 800% 800%;
-
-    -webkit-animation: AnimationName 9s ease infinite;
-    -moz-animation: AnimationName 9s ease infinite;
-    animation: AnimationName 9s ease infinite;
-}
-
-@-webkit-keyframes AnimationName {
-    0%{background-position:50% 0%}
-    50%{background-position:51% 100%}
-    100%{background-position:50% 0%}
-}
-@-moz-keyframes AnimationName {
-    0%{background-position:50% 0%}
-    50%{background-position:51% 100%}
-    100%{background-position:50% 0%}
-}
-@keyframes AnimationName {
-    0%{background-position:50% 0%}
-    50%{background-position:51% 100%}
-    100%{background-position:50% 0%}
-} */
-
 body {
-
   padding: 2% 10%;
   font-family: 'Jura', Sans-serif;
   font-weight: 400;
@@ -86,6 +61,7 @@ body {
 
 .NP-logo {
   max-width: 40%;
+  min-width: 50%;
   padding: 20px;
   display: block;
   margin-top: 100px;
@@ -105,10 +81,6 @@ body {
 
 .work-link-yellow {
   color: yellow;
-}
-
-.work-link-orange {
-  color: orange;
 }
 
 
@@ -134,14 +106,14 @@ body {
 
 ul {
   padding-left: 0;
-  text-align: right;
+  text-align: center;
   list-style-type: none;
 }
 
 h1 {
   padding-left: 20px;
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-  color: pink;
+  color: white;
 }
 
 h2 {
@@ -179,10 +151,7 @@ a:active {
   display: -ms-flexbox;
   display: flex;
   margin: auto;
-  padding: 20px;
   max-width: 100%;
-  border-bottom: 1px solid white;
-  /* background-color: #333570; */
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
@@ -518,34 +487,33 @@ button:focus,
 #contact-name {
   margin: 10px;
   width: 100%;
-  border-radius: 10px;
+  border-radius: 5px;
 }
 
 #contact-email {
   margin: 10px;
   width: 100%;
-  border-radius: 10px;
+  border-radius: 5px;
 }
 
 #contact-phone {
   margin: 10px;
   width: 100%;
-  border-radius: 10px;
+  border-radius: 5px;
 }
 
 #contact-message {
   margin: 10px;
   width: 100%;
-  border-radius: 10px;
+  border-radius: 5px;
 }
 
 #contact-form {
-  border-radius: 20px;
-  margin-left: 50px;
-  margin-right: 50px;
+  border-radius: 5px;
+  margin-left: 30%;
+  margin-right: 30%;
   margin-bottom: 20px;
   padding: 20px;
-  background-color: #015088;
 }
 
 #contact-button {
@@ -553,6 +521,7 @@ button:focus,
   border: none;
   color: #fff;
   font-size: 1em;
+  margin-top: 10px;
   padding: 10px 50px;
   text-transform: uppercase;
   font-weight: normal;
@@ -562,7 +531,7 @@ button:focus,
 
 #contact-button:hover {
   cursor: pointer;
-  font-size: 25px;
+  font-size: 20px;
   background-color: #e0b354;
 }
 
@@ -660,7 +629,7 @@ footer {
 }
 
 .social-media-index {
-  margin-top: 200px;
+  margin-top: 450px;
 }
 
 .social-media-logo {
