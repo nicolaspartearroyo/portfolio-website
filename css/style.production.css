@@ -22,7 +22,7 @@ Background-color: #333570
 
 /* Background Animation*/
 .css-selector {
-  background: linear-gradient(309deg, #b90000, #00439f, #000000);
+  background: linear-gradient(309deg, #00439f, #000000);
   background-size: 600% 600%;
 
     -webkit-animation: AnimationName 30s ease infinite;
@@ -46,6 +46,15 @@ Background-color: #333570
     100%{background-position:0% 18%}
 }
 
+html {
+  height:100%;
+}
+
+body {
+  margin:0;
+}
+
+
 body {
   padding: 2% 10%;
   font-family: 'Jura', Sans-serif;
@@ -64,7 +73,6 @@ body {
   min-width: 50%;
   padding: 20px;
   display: block;
-  margin-top: 100px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -74,10 +82,13 @@ body {
 }
 
 .logo {
-  margin-top: 10px;
-  width: 8%;
-  height: 8%;
+  padding-left: 15px;
+  width: 60px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
 }
+
 
 .work-link-yellow {
   color: yellow;
@@ -122,7 +133,6 @@ h2 {
 }
 
 p {
-  padding-left: 20px;
   line-height: 1.4;
   color: white;
 }
@@ -143,6 +153,10 @@ a:focus {
 
 a:active {
   color: #489c79;
+}
+
+.indexIntro {
+  text-align: center;
 }
 
 /* Navigation bar */
@@ -244,9 +258,9 @@ span:hover {
 }
 
 .profile_picture {
-  float: left;
-  margin-right: 20px;
-  margin-left: 30px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
   border-radius: 50%;
   width: 250px;
   -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
@@ -268,6 +282,20 @@ span:hover {
   -webkit-box-flex: 1;
   -ms-flex: 1 1 100px;
   flex: 1 1 100px;
+}
+
+/* Technology Stack icons */
+
+.stackIcons {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+img.icons {
+    width: 80px;
+    margin: 15px
 }
 
 /* Check some of my code animation */
@@ -356,121 +384,8 @@ button:focus,
 .button:hover,
 .button:focus {
   cursor: pointer;
-  font-size: 25px;
+  font-size: 20px;
   background-color: #e0b354;
-}
-
-/* SVG Animation */
-.svg-berlin {
-  text-align: center;
-}
-
-@-webkit-keyframes color-change {
-  from {
-    fill: lightblue;
-  }
-
-  to {
-    fill: yellow;
-  }
-}
-
-@keyframes color-change {
-  from {
-    fill: lightblue;
-  }
-
-  to {
-    fill: yellow;
-  }
-}
-
-.sun {
-  -webkit-animation: 4s color-change infinite alternate linear;
-  animation: 4s color-change infinite alternate linear;
-}
-
-@-webkit-keyframes color-change2 {
-  from {
-    fill: white;
-  }
-
-  to {
-    fill: grey;
-  }
-}
-
-@keyframes color-change2 {
-  from {
-    fill: white;
-  }
-
-  to {
-    fill: grey;
-  }
-}
-
-.berlin-ball {
-  -webkit-animation: 1s color-change2 infinite alternate linear;
-  animation: 1s color-change2 infinite alternate linear;
-}
-
-@-webkit-keyframes cloud-move {
-  from {
-    -webkit-transform: translate(0, 50px);
-    transform: translate(0, 50px);
-  }
-
-  to {
-    -webkit-transform: translate(200px, 50px);
-    transform: translate(200px, 50px);
-  }
-}
-
-@keyframes cloud-move {
-  from {
-    -webkit-transform: translate(0, 50px);
-    transform: translate(0, 50px);
-  }
-
-  to {
-    -webkit-transform: translate(200px, 50px);
-    transform: translate(200px, 50px);
-  }
-}
-
-.cloud-front {
-  -webkit-animation: 40s cloud-move infinite alternate linear;
-  animation: 40s cloud-move infinite alternate linear;
-}
-
-@-webkit-keyframes cloud-move-reverse {
-  from {
-    -webkit-transform: translate(446px, 48px);
-    transform: translate(446px, 48px);
-  }
-
-  to {
-    -webkit-transform: translate(100px, 48px);
-    transform: translate(100px, 48px);
-  }
-}
-
-@keyframes cloud-move-reverse {
-  from {
-    -webkit-transform: translate(446px, 48px);
-    transform: translate(446px, 48px);
-  }
-
-  to {
-    -webkit-transform: translate(100px, 48px);
-    transform: translate(100px, 48px);
-  }
-}
-
-.cloud-back {
-  -webkit-animation: 60s cloud-move-reverse infinite alternate linear;
-  animation: 60s cloud-move-reverse infinite alternate linear;
 }
 
 /* Contact Form */
@@ -554,12 +469,17 @@ button:focus,
 .grid__item {
   background-color: grey;
   padding: 20px;
+  border-radius: 10px;
+}
+
+.grid__item:hover {
+opacity: 90%
 }
 
 .grid__item:last-child {
   -ms-grid-row: 1;
   -ms-grid-row-span: 2;
-  grid-row: 1 / 3;
+  grid-row: 1 / 1;
 }
 
 /* Smartphones configuration */
@@ -628,16 +548,11 @@ footer {
   text-align: center;
 }
 
-.social-media-index {
-  margin-top: 450px;
-}
-
 .social-media-logo {
   text-decoration: none;
 }
 
 img.github,
-img.soundcloud,
 img.linkedin {
   width: 30px;
   padding-bottom: 15px;
