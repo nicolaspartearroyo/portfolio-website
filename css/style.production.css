@@ -69,9 +69,8 @@ body {
 }
 
 .NP-logo {
-  max-width: 40%;
-  min-width: 50%;
-  padding: 20px;
+  width: 450px;
+  padding-bottom: 30px;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -553,6 +552,10 @@ footer {
 
 .social-media-logo {
   text-decoration: none;
+}
+
+.social-media {
+font-weight: bold;
 }
 
 img.github,
