@@ -88,6 +88,24 @@ body {
   display: block;
 }
 
+/* Hello World text */
+.indexIntro h1 {
+  animation: typing 3s steps(50);
+  overflow: hidden;
+  padding-top: 20px;
+  margin: 0 auto;
+  white-space: nowrap;
+}
+
+/* Hello World Animation */
+@keyframes typing {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%
+  }
+}
 
 .work-link-yellow {
   color: yellow;
@@ -248,13 +266,13 @@ img.page-header__item {
   margin-left: 15px;
 }
 
-/* Home content */
+/* Home text details */
 span {
   font-weight: bolder;
 }
 
 span:hover {
-  background: pink;
+  background-color: green;
 }
 
 .profile_picture {
