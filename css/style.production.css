@@ -48,6 +48,7 @@ Background-color: #333570
 html {
   height:100%;
   margin: 10px;
+  background-color: white;
 }
 
 body {
