@@ -319,7 +319,6 @@ span:hover {
   display: grid;
   grid-template-columns: 1fr 2fr;
   align-items: center;
-  padding-bottom: 4vmin;
   height: 90vh;
   width: 100%;
   color: grey;
