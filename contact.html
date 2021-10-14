@@ -35,48 +35,30 @@
       </nav>
     </header>
 
+    <h1 class="contact">Contact</h1>
+       <form action="#" id="contact-form" method="post">
+         <div class="row input-container">
 
-    <div class="container">
-	<div class="row">
-			<h1 class="contact">Contact me!</h1>
-	</div>
-  <form action="#" id="contact-form" method="post">
+         <div class="styled-input wide">
+           <label class="standard-label" for="contact-name">Name</label>
+           <input type="text" placeholder="Name" id="contact-name">
+         </div>
+         <div class="styled-input">
+           <label class="standard-label" for="email">Email*</label>
+           <input type="email" placeholder="Email" id="contact-email">
+         </div>
+         <div class="styled-input" style="float:right;">
+           <label class="standard-label" for="contact-phone">Phone</label>
+           <input type="tel" placeholder="Phone" id="contact-phone">
+         </div>
+         <div class="styled-input wide">
+           <label class="standard-label" for="contact-message">Message*</label>
+           <textarea id="contact-message" placeholder="Message" maxlength="240" required></textarea>
+         </div>
+         <input class="submit-btn" type="submit" value="Send!" id="contact-button">
+       </div>
+       </form>
 
-	<div class="row input-container">
-			<div class="col-xs-12">
-	       <div class="styled-input wide">
-					<input type="text" required id="contact-name"  />
-					<label class="standard-label" for="contact-name">Name</label>
-				</div>
-			</div>
-
-			<div class="col-md-6 col-sm-12">
-				<div class="styled-input">
-					<input type="email" required />
-					<label class="standard-label" for="email" id="contact-email">Email</label>
-				</div>
-			</div>
-
-			<div class="col-md-6 col-sm-12">
-				<div class="styled-input" style="float:right;">
-					<input type="tel" required type="tel" id="contact-phone"/>
-					<label class="standard-label" for="contact-phone">Phone Number</label>
-				</div>
-			</div>
-
-			<div class="col-xs-12">
-				<div class="styled-input wide">
-					<textarea required id="contact-message"></textarea>
-					<label class="standard-label" for="contact-message">Message</label>
-				</div>
-			</div>
-
-			<div class="col-xs-12">
-				<div class="btn-lrg submit-btn button submit">Send Message</div>
-			</div>
-    </form>
-	</div>
-</div>
 
     <footer>
       <div class="social-media">
