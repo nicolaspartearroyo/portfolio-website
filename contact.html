@@ -16,7 +16,7 @@
 <body class="css-selector">
   <div>
     <header class="page-header">
-      <!-- <img src="img/NP-icon.png" alt="logo" class="logo"> -->
+
       <nav class="page-header__item">
         <ul role="menubar">
           <li role="presentation">
@@ -34,30 +34,41 @@
         </ul>
       </nav>
     </header>
-    <h1 class="contact">Contact</h1>
-    <form action="#" id="contact-form" method="post">
-      <div>
-        <label class="standard-label" for="contact-name">Name</label>
-        <input type="text" id="contact-name">
-      </div>
-      <div>
-        <label class="standard-label" for="email">Email*</label>
-        <input type="email" placeholder="example@mail.com" id="contact-email">
-      </div>
-      <div>
-        <label class="standard-label" for="contact-phone">Phone</label>
-        <input type="tel" id="contact-phone">
-      </div>
-      <div>
-        <label class="standard-label" for="contact-message">Message*</label>
-        <textarea id="contact-message" placeholder="max. length 240 characteres" maxlength="240" required></textarea>
-      </div>
-      <input type="submit" value="Send!" id="contact-button">
-    </form>
-    <div class="contact-details">
-      Berlin<br>
-      Deutschland<br>
-    </div>
+    <div class="container">
+	<div class="row">
+			<h1 class="contact">Contact me!</h1>
+	</div>
+	<div class="row input-container">
+			<div class="col-xs-12">
+				<div class="styled-input wide">
+					<input type="text" required />
+					<label>Name</label>
+				</div>
+			</div>
+			<div class="col-md-6 col-sm-12">
+				<div class="styled-input">
+					<input type="text" required />
+					<label>Email</label>
+				</div>
+			</div>
+			<div class="col-md-6 col-sm-12">
+				<div class="styled-input" style="float:right;">
+					<input type="text" required />
+					<label>Phone Number</label>
+				</div>
+			</div>
+			<div class="col-xs-12">
+				<div class="styled-input wide">
+					<textarea required></textarea>
+					<label>Message</label>
+				</div>
+			</div>
+			<div class="col-xs-12">
+				<div class="btn-lrg submit-btn button">Send Message</div>
+			</div>
+	</div>
+</div>
+
     <footer>
       <div class="social-media">
       <p>Find me on</p>
