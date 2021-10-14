@@ -721,7 +721,8 @@ font-weight: bold;
 }
 
 img.github,
-img.linkedin {
+img.linkedin,
+img.soundcloud {
   width: 30px;
   padding-bottom: 15px;
 }
