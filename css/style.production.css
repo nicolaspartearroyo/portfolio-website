@@ -699,12 +699,19 @@ textarea {
 
 @media only screen and (max-width: 750px) {
   body {
+
     padding: 0;
   }
 
   ul {
     text-align: center;
   }
+
+.indexIntro {
+  padding-left: 3vh;
+  padding-right: 3vh;
+
+}
 
   .page-header {
     display: flow-root;
@@ -716,6 +723,17 @@ textarea {
 
   .svg-berlin {
     display: none;
+  }
+
+  .title {
+    margin-left: 1vh;
+  }
+
+  .stackIcons {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    margin-left: 35%;
+
   }
 }
 
