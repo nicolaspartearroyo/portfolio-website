@@ -57,7 +57,6 @@ body {
 
 
 body {
-
   padding: 2% 10%;
   font-family: 'Jura', Sans-serif;
   font-weight: 400;
@@ -69,31 +68,15 @@ body {
   animation-duration: 1s;
 }
 
-.NP-logo {
-  width: 100px;
-  padding-bottom: 30px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 .meet-app {
   width: 100%;
-}
-
-.logo {
-  padding-left: 15px;
-  width: 60px;
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
 }
 
 .work-link-yellow {
   color: yellow;
 }
 
-
+/* Opacity FX on P elementes */
 @-webkit-keyframes opacity-fx {
   from {
     opacity: 0;
@@ -328,7 +311,7 @@ span:hover {
   grid-column: 1/-1;
   margin-left: -5vh;
   grid-row: 1;
-  font-size: 6vh;
+  font-size: 5vh;
   width: 100%;
   z-index: 2;
 }
