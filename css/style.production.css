@@ -772,7 +772,7 @@ img.soundcloud {
 
 /* Hello World text */
 .indexIntro h1 {
-  font-size: 3vh;
+  font-size: 4vh;
   animation: typing 2s steps(50);
   overflow: hidden;
   padding-top: 20px;
@@ -785,6 +785,7 @@ img.soundcloud {
 @keyframes typing {
   from {
     width: 0%;
+  
   }
   to {
     width: 100%
