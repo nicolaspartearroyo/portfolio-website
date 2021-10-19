@@ -729,7 +729,10 @@ textarea {
     display: grid;
     grid-template-columns: 1fr 2fr;
     margin-left: 35%;
+  }
 
+  footer {
+    padding-left: 20%;
   }
 }
 
@@ -738,6 +741,7 @@ footer {
   position: fixed;
   bottom: 0;
   width: 100%;
+  margin-left: -7%;
   clear: both;
   display: -webkit-box;
   display: -ms-flexbox;
