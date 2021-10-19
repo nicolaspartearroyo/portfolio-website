@@ -253,8 +253,7 @@ span:hover {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  border-bottom-left-radius: 20%;
-  border-top-right-radius: 20%;
+  border-bottom-right-radius: 20%;
   width: 200vh;
   -webkit-transition: -webkit-transform 3s;
   transition: -webkit-transform 3s;
