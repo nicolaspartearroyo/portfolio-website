@@ -735,6 +735,9 @@ textarea {
 
 /* Find me on */
 footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
   clear: both;
   display: -webkit-box;
   display: -ms-flexbox;
