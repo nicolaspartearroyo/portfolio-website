@@ -502,7 +502,8 @@ form {
 /* Download my CV */
 .button_cv {
   text-align: center;
-  margin: 2vh
+  margin: 4vh
+
 }
 
 a.button {
@@ -642,13 +643,16 @@ textarea {
   -ms-grid-columns: 1fr 10px 1fr 10px 1fr;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 10px;
+
 }
 
 .grid__item {
-  background-color: grey;
   padding: 20px;
-  border-radius: 10px;
-  opacity: 95%
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+
+  opacity: 95%;
+  background-color: grey;
 
 }
 
@@ -667,7 +671,8 @@ footer {
   position: fixed;
   bottom: 0;
   width: 100%;
-  margin-left: -7%;
+  margin-left: -10%;
+  padding-bottom: 1vh;
   clear: both;
   display: -webkit-box;
   display: -ms-flexbox;
