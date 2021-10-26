@@ -650,10 +650,9 @@ textarea {
   padding: 20px;
   border-top-right-radius: 10px;
   border-bottom-left-radius: 10px;
-
+  box-shadow: 10px 10px;
   opacity: 95%;
   background-color: grey;
-
 }
 
 .grid__item:hover {
@@ -665,6 +664,25 @@ textarea {
   -ms-grid-row-span: 2;
   grid-row: 1 / 1;
 }
+
+/* Grid for case study */
+.grid_caseStudy {
+  margin: 10px;
+  text-align: left;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
+}
+
+.grid__item_cs {
+  padding: 10px;
+  opacity: 95%;
+}
+
+.caseStudy_title {
+  text-align: left;
+}
+
 
 /* Find me on */
 footer {
@@ -716,6 +734,18 @@ img.soundcloud {
   white-space: nowrap;
 }
 
+.myFlix_pics {
+  width: 400px;
+  box-shadow: 10px 10px black;
+}
+
+h3{
+  color: white;
+}
+
+.myFlix_text {
+  display: absolute;
+}
 /* Hello World Animation */
 @keyframes typing {
   from {
@@ -729,21 +759,21 @@ img.soundcloud {
 /* Smartphones configuration */
 
 @media all and (max-width: 500px) {
-  .grid {
+  .grid, .grid_caseStudy  {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
   }
 }
 
 @media all (min-width: 500px) and (max-width: 750px) {
-  .grid {
+  .grid, .grid_caseStudy {
     -ms-grid-columns: 1fr 10px 1fr;
     grid-template-columns: 1fr 1fr;
   }
 }
 
 @media all (max-width: 750px) {
-  .grid {
+  .grid, .grid_caseStudy {
     grid-gap: 10px;
   }
 
@@ -751,6 +781,13 @@ img.soundcloud {
     grid-column: auto;
     grid-row: auto;
   }
+
+  .grid__item_cs:last-child {
+    grid-column: auto;
+    grid-row: auto;
+  }
+
+
 
   h1 {
     font-size: 15px;
