@@ -686,10 +686,9 @@ textarea {
 
 /* Find me on */
 footer {
-  position: fixed;
+position: relative;
   bottom: 0;
   width: 100%;
-  margin-left: -10%;
   padding-bottom: 1vh;
   clear: both;
   display: -webkit-box;
@@ -734,7 +733,7 @@ img.soundcloud {
   white-space: nowrap;
 }
 
-.myFlix_pics {
+.caseStudy_pics {
   width: 400px;
   box-shadow: 10px 10px black;
 }
@@ -760,6 +759,7 @@ h3{
 
 @media all and (max-width: 500px) {
   .grid, .grid_caseStudy  {
+    
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
   }
