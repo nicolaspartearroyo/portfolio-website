@@ -117,6 +117,11 @@ p {
   animation: fadein 2s;
 }
 
+li {
+  color: white;
+  font-size: 18px;
+}
+
 /* Fade in Animation on P elements */
 @keyframes fadein {
     from {
@@ -759,7 +764,7 @@ h3{
 
 @media all and (max-width: 500px) {
   .grid, .grid_caseStudy  {
-    
+
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
   }
